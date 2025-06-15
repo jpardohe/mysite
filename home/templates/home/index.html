@@ -1,12 +1,22 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>SITIO OFICIAL DE JESUS PARDO</title>
-    </head>
-    <BODY>
-        <H1>BIENVENIDO A MI SITIO</H1>
-        <P>
-            Hola. Soy Jesus Pardo. Este es mi sitio hecho con Django
-        </P>
-    </BODY>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>JESUS PARDO SITE</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <img src="{% static 'images/logo_jp.png' %}" alt="Logo de JPARDO" class="logo">
+        <h1>JESUS PARDO OFFICIAL SITE</h1>
+    </header>
+    <div class="container">
+        <div class="card-container">
+            <div class="card">PORTFOLIO</div>
+            <div class="card">NFL FANTASY</div>
+        </div>
+    </div>
+</body>
 </html>
